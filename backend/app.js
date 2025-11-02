@@ -6,11 +6,7 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 
-const list = [
-    { id: 1, title: 'Item 1' },
-    { id: 2, title: 'Item 2' },
-    { id: 3, title: 'Item 3' },
-];
+const list = [];
 
 app.get('/simple', (req, res) => {
     res.json(list);
